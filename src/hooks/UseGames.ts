@@ -2,18 +2,19 @@ import { useEffect, useState } from "react";
 import apiClient from "@/services/api-client";
 import { CanceledError } from "axios";
 
-type Games = {
+export type Game = {
   id: number;
   name: string;
+  background_image: string;
 };
 
 type FetchGames = {
   count: number;
-  results: Games[];
+  results: Game[];
 };
 
 const useGames = () => {
-  const [games, setGames] = useState<Games[]>([]);
+  const [games, setGames] = useState<Game[]>([]);
   const [error, setrError] = useState("");
 
   useEffect(() => {
