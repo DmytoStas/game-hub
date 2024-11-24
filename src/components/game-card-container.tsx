@@ -7,7 +7,7 @@ type GameCardContainerProp = {
 
 export default function GameCardContainer({ children }: GameCardContainerProp) {
   return (
-    <Box width={"350px"} borderRadius={10} overflow="hidden">
+    <Box width="100%" borderRadius={10} overflow="hidden">
       {children}
     </Box>
   );
