@@ -1,4 +1,4 @@
-import { GameQuery } from "@/App";
+import { GameQuery } from "../App";
 import useData from "./useData";
 
 export type Platform = {
