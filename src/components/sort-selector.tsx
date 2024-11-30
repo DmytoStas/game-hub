@@ -25,7 +25,6 @@ export default function SortSelector({
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-        {/* {selectedPlatform?.name || "Platforms"} */}
         Order by: {currentSortOrder?.label || "Relevance"}
       </MenuButton>
       <MenuList>
