@@ -1,16 +1,18 @@
-import { Genre } from "./genre";
-import { Platform } from "./platform";
-import { Publisher } from "./publishers";
+import GenreT from "./genre";
+import PlatformT from "./platform";
+import PublisherT from "./publishers";
 
-export type Game = {
+type GameT = {
   id: number;
   name: string;
   slug: string;
-  genres: Genre[];
-  publishers: Publisher[];
+  genres: GenreT[];
+  publishers: PublisherT[];
   description_raw: string;
   background_image: string;
-  parent_platforms: { platform: Platform }[];
+  parent_platforms: { platform: PlatformT }[];
   metacritic: number;
   rating_top: number;
 };
+
+export default GameT;

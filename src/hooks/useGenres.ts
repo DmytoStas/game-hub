@@ -3,9 +3,9 @@ import ms from "ms";
 
 import APIClient from "../services/api-client";
 import genres from "../data/genres";
-import { Genre } from "../entities/genre";
+import GenreT from "../entities/genre";
 
-const apiClient = new APIClient<Genre>("/genres");
+const apiClient = new APIClient<GenreT>("/genres");
 
 const useGenres = () =>
   useQuery({

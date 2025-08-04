@@ -1,6 +1,6 @@
-import { Platform } from "../entities/platform";
-
+import PlatformT from "../entities/platform";
 import { HStack, Icon } from "@chakra-ui/react";
+
 import {
   FaWindows,
   FaPlaystation,
@@ -15,7 +15,7 @@ import { BsGlobe } from "react-icons/bs";
 import { IconType } from "react-icons";
 
 type PlatformIconListProp = {
-  platforms: Platform[];
+  platforms: PlatformT[];
 };
 
 export default function PlatformIconList({ platforms }: PlatformIconListProp) {

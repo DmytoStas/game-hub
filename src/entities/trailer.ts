@@ -1,6 +1,8 @@
-export type TrailerT = {
+type TrailerT = {
   id: number;
   name: string;
   preview: string;
   data: { 480: string; max: string };
 };
+
+export default TrailerT;

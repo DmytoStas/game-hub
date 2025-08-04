@@ -3,9 +3,9 @@ import ms from "ms";
 
 import APIClient from "../services/api-client";
 import platforms from "../data/platforms";
-import { Platform } from "../entities/platform";
+import PlatformT from "../entities/platform";
 
-const apiClient = new APIClient<Platform>("/platforms/lists/parents");
+const apiClient = new APIClient<PlatformT>("/platforms/lists/parents");
 
 const usePlatforms = () =>
   useQuery({

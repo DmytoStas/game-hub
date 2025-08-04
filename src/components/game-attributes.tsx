@@ -1,10 +1,11 @@
 import { SimpleGrid, Text } from "@chakra-ui/react";
-import { Game } from "../entities/game";
+
+import GameT from "../entities/game";
 import CriticScore from "./critic-score";
 import DefinitionItem from "./definition-item";
 
 type PropsT = {
-  game: Game;
+  game: GameT;
 };
 
 const GameAttributes = ({ game }: PropsT) => {

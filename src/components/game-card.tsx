@@ -1,14 +1,14 @@
-import { Game } from "../entities/game";
-
 import { Card, CardBody, Heading, HStack, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+
+import GameT from "../entities/game";
 import getCroppedImageUrl from "../services/image-url";
 import CriticScore from "./critic-score";
 import Emoji from "./emoji";
 import PlatformIconList from "./platform-icon-list";
-import { Link } from "react-router-dom";
 
 type GameCardProps = {
-  game: Game;
+  game: GameT;
 };
 
 export default function GameCard({ game }: GameCardProps) {
